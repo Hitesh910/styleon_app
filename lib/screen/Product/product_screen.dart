@@ -28,6 +28,9 @@ class _ProductScreenState extends State<ProductScreen> {
                       bottomRight: Radius.circular(38))),
               child: Image.asset("${m1['image']}"),
             ),
+            FloatingActionButton(onPressed: () {
+              Navigator.pop(context);
+            },child: Icon(Icons.arrow_back_outlined),backgroundColor: Colors.grey,)
           ]),
           Padding(
             padding: const EdgeInsets.all(8.0),
